@@ -133,7 +133,8 @@ class AdminController extends Controller
        
     }
     public function helper(){
-        $start_bonus = DB::table('bonuses')->latest()->first();
+//         $start_bonus = DB::table('bonuses')->latest()->first();
+        $start_bonus = Bonus::orderby('created_at', 'desc')->first();
         if($start_bonus!=null){
             $check = $start_bonus->first_year;
         }
