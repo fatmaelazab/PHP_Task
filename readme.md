@@ -104,9 +104,11 @@ Let’s setup the Cron Jobs to run automatically without initiating manually by 
 
     crontab -e
 
-This will open the server Crontab file, paste the code below into the file, save and then exit.
+This will open the server Crontab file, paste the code below into the file.
 
     * * * * * php /path/to/artisan schedule:run >> /dev/null 2>&1
+    
+Then type ":wq" to save and exit.
 
 Do not forget to replace /path/to/artisan with the full path to the Artisan command of your Laravel Application.
 
