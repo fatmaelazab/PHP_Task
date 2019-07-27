@@ -35,7 +35,8 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
 
-
+if( DB::getSchemaBuilder()->hasTable('bonuses') &&  DB::getSchemaBuilder()->hasTable('employees')){
+    
         list($summary_array,$salary_dates,$bonus_dates) =  app('App\Http\Controllers\AdminController')->reminderHelper();
             $this->summary_array = $summary_array;
             $this->salary_dates = $salary_dates;
@@ -58,7 +59,7 @@ class Kernel extends ConsoleKernel
                 }
             }
         });
-
+}
         // * * * * * php /path/to/artisan schedule:run >> /dev/null 2>&
     }
 
