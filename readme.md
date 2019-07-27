@@ -98,7 +98,7 @@ Admin decides if the bonus will start to be added from next month or as default 
 
 
 
-## Also the API contains a schedule cron job, so to starting the Laravel Scheduler
+## Also the API contains a schedule cron job, so to start the Laravel Scheduler
 
 Let’s setup the Cron Jobs to run automatically without initiating manually by running the command. To start the Laravel Scheduler itself, we only need to add one Cron job which executes every minute. Go to your terminal, open another tab than the tab of the alrealy running server, cd into your project and run this command.
 
