@@ -26,7 +26,7 @@ As the API is using an email server, you should make the configuration for the f
     MAIL_PASSWORD=ladlfwckkjdafuyj
     MAIL_ENCRYPTION=tls
 
-You could change the MAIL_USERNAME and MAIL_PASSWORD fields with the email you want to user and its application key, but for this API, I have already created one so you could use it right away.
+You could change the MAIL_USERNAME and MAIL_PASSWORD fields with the email you want to use and its application key, but for this API, I have already created one so you could use it right away.
 Also go to /config/mail.php and update the following field
 
         'from' => [
