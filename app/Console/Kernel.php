@@ -61,7 +61,7 @@ if( DB::getSchemaBuilder()->hasTable('bonuses') &&  DB::getSchemaBuilder()->hasT
             }
         });
 }
-        // * * * * * php /path/to/artisan schedule:run >> /dev/null 2>&
+        // * * * * * php /path/to/artisan schedule:run >> /dev/null 2>&1
     }
 
     /**
