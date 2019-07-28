@@ -92,7 +92,7 @@ Admin gets the payment dates for the remainder of this year with the correspondi
 
     http://127.0.0.1:8000/api/summary
 
-Admin decides if the bonus will start to be added from next month or as default the bonus is already added and calculated in the payements
+Admin decides if the bonus will start to be added from next month or as default the bonus is already added and calculated in the payments because the bonus is added every month for the previous month so the first year only will have 11 bonus payment not 12.
 
     http://127.0.0.1:8000/api/startBonus
 
